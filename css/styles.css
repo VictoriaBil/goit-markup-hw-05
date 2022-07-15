@@ -4,6 +4,34 @@
 /* Цвет текста #757575 */
 /* Цвет текста в Герое и адреса в футере #FFFFFF  */
 /* Цвет имейла и телефона в футере rgba(255, 255, 255, 0.6) */
+:root {
+  --accent-color: #2196f3;
+  --header-nav-color: #212121;
+}
 
 body {
+  background-color: #ffffff;
+  color: #757575;
+}
+
+.list {
+  list-style: none;
+}
+
+.logo-first {
+  color: var(--accent-color);
+}
+.logo-second {
+  color: #000000;
+}
+
+h1,
+h2,
+h3,
+.site-nav a {
+  color: var(--header-nav-color);
+}
+
+.site-mail {
+  color: var(--accent-color);
 }

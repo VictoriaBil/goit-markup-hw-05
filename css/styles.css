@@ -1,21 +1,23 @@
 /* Цвет второй части лого #000000 */
 /* Цвет акцента #2196F3 */
-/* Основной цвет навигации и заголовков #212121  */
-/* Цвет текста #757575 */
+/* Основной цвет #212121  */
+/* Вторичный цвет #757575 */
 /* Цвет текста в Герое и адреса в футере #FFFFFF  */
 /* Цвет имейла и телефона в футере rgba(255, 255, 255, 0.6) */
 :root {
   --accent-color: #2196f3;
-  --header-nav-color: #212121;
+  --primary-color: #212121;
+  --secondary-color: #757575;
 }
 
 body {
   background-color: #ffffff;
-  color: #757575;
+  color: #212121;
 }
 
-.list {
-  list-style: none;
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
 }
 
 .logo-first {
@@ -25,13 +27,65 @@ body {
   color: #000000;
 }
 
-h1,
-h2,
-h3,
-.site-nav a {
-  color: var(--header-nav-color);
+.list {
+  list-style: none;
 }
 
-.site-mail {
+/* Навигация */
+.site-nav a {
+  color: var(--primary-color);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
   color: var(--accent-color);
+}
+
+/* Контакты */
+.site-contacts a {
+  color: var(--secondary-color);
+}
+
+.site-contacts a:hover,
+.site-contacts a:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  color: #ffffff;
+}
+
+.hero-button {
+  background-color: var(--accent-color);
+}
+
+.button-title {
+  color: #ffffff;
+}
+
+/* Наші особливості */
+p {
+  color: var(--secondary-color);
+}
+
+/* Footer */
+.logo-third {
+  color: #ffffff;
+}
+
+footer {
+  background-color: #2f303a;
+}
+
+.address {
+  color: #ffffff;
+}
+.mail,
+.tel {
+  color: rgba(255, 255, 255, 0.6);
 }

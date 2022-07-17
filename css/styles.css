@@ -8,11 +8,24 @@
   --accent-color: #2196f3;
   --primary-color: #212121;
   --secondary-color: #757575;
+  --white: #ffffff;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--white);
   color: #212121;
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Logo */
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
 }
 
 .logo:hover,
@@ -31,14 +44,32 @@ body {
   list-style: none;
 }
 
+.list a {
+  text-decoration: none;
+}
 /* Навигация */
 .site-nav a {
   color: var(--primary-color);
 }
 
 .site-nav a:hover,
-.site-nav a:focus {
+.site-nav a:focus,
+.footer a:hover {
   color: var(--accent-color);
+}
+
+.site-nav,
+.site-contacts {
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.site-options {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
 }
 
 /* Контакты */
@@ -54,10 +85,16 @@ body {
 /* Hero */
 .hero {
   background-color: #2f303a;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .hero-title {
-  color: #ffffff;
+  color: var(--white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
 }
 
 .hero-button {
@@ -65,7 +102,10 @@ body {
 }
 
 .button-title {
-  color: #ffffff;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
 }
 
 /* Наші особливості */
@@ -73,9 +113,66 @@ p {
   color: var(--secondary-color);
 }
 
+.site-features h3 {
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.site-features p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.features h2,
+.services h2,
+.workers h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.site-workers h3,
+.site-workers p {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.site-workers h3 {
+  font-weight: 500;
+}
+
+/* Портфоліо. Наші роботи*/
+
+.site-options button {
+  background-color: #f5f4fa;
+  color: var(--primary-color);
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+}
+
+.site-options button:hover,
+.site-options button:focus {
+  color: var(--white);
+  background-color: var(--accent-color);
+}
+
+.site-projects h2 {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.site-projects p {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
 /* Footer */
 .logo-third {
-  color: #ffffff;
+  color: var(--white);
 }
 
 footer {
@@ -83,8 +180,14 @@ footer {
 }
 
 .address {
-  color: #ffffff;
+  color: var(--white);
 }
+
+.footer-contacts a {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
 .mail,
 .tel {
   color: rgba(255, 255, 255, 0.6);

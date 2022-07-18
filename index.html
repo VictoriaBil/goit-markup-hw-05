@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -19,9 +23,9 @@
           ><span class="logo-first">Web</span><span class="logo-second">Studio</span></a
         >
         <ul class="site-nav list">
-          <li><a href="./index.html">Студія</a></li>
-          <li><a href="./portfolio.html">Портфоліо</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a href="./index.html" class="link current">Студія</a></li>
+          <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
+          <li><a href="#" class="link">Контакти</a></li>
         </ul>
       </nav>
       <ul class="site-contacts list">
@@ -42,23 +46,31 @@
 
       <!--Скрытый Наши особенности-->
       <section class="features">
-        <h2>Наші особливості</h2>
+        <h2 class="visually-hidden">Наші особливості</h2>
         <ul class="site-features list">
           <li>
             <h3>Увага до деталей</h3>
-            <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+            <p class="features-descriptions">
+              Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+            </p>
           </li>
           <li>
             <h3>Пунктуальність</h3>
-            <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+            <p class="features-descriptions">
+              Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+            </p>
           </li>
           <li>
             <h3>Планування</h3>
-            <p>Так само консультація з широким активом значною мірою зумовлює.</p>
+            <p class="features-descriptions">
+              Так само консультація з широким активом значною мірою зумовлює.
+            </p>
           </li>
           <li>
             <h3>Сучасні технології</h3>
-            <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+            <p class="features-descriptions">
+              Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+            </p>
           </li>
         </ul>
       </section>
@@ -127,7 +139,7 @@
       <a href="./index.html" class="logo"
         ><span class="logo-first">Web</span><span class="logo-third">Studio</span></a
       >
-      <address>
+      <address class="site-address">
         <ul class="footer-contacts list">
           <li>
             <a

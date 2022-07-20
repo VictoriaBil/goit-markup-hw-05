@@ -47,19 +47,19 @@ body {
   list-style: none;
 }
 
-.list a {
+.list .link {
   text-decoration: none;
 }
 
 /* Навигация */
 
-.site-nav a {
+.site-nav .link {
   color: var(--primary-color);
 }
 
-.site-nav a:hover,
-.site-nav a:focus,
-.footer a:hover {
+.site-nav .link:hover,
+.site-nav .link:focus,
+.footer .link:hover {
   color: var(--accent-color);
 }
 
@@ -77,17 +77,17 @@ body {
   line-height: 1.63;
 }
 
-.site-nav .link.current {
+.site-nav .current {
   color: var(--accent-color);
 }
 
 /* Контакты */
-.site-contacts a {
+.site-contacts .link {
   color: var(--secondary-color);
 }
 
-.site-contacts a:hover,
-.site-contacts a:focus {
+.site-contacts .link:hover,
+.site-contacts .link:focus {
   color: var(--accent-color);
 }
 
@@ -140,45 +140,41 @@ body {
   margin: -1px;
 }
 
-.features-descriptions {
+.features-desc {
   color: var(--secondary-color);
+  font-size: 14px;
+  line-height: 1.7;
 }
 
-.site-features h3 {
+.features-title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
-.site-features p {
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-.workers {
+.site-workers {
   background-color: var(--button-bcg);
 }
 
-.site-workers li {
+.workers-item {
   background-color: var(--white);
 }
 
-.features h2,
-.services h2,
-.workers h2 {
+.services-title,
+.workers-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 
-.site-workers h3,
-.site-workers p {
+.workers-name,
+.workers-speciality {
   font-size: 16px;
   line-height: 1.19;
 }
 
-.site-workers h3 {
+.workers-name {
   font-weight: 500;
 }
 
@@ -199,7 +195,7 @@ body {
   background-color: var(--accent-color);
 }
 
-.projects h2 {
+.projects-title {
   color: var(--primary-color);
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -207,7 +203,7 @@ body {
   line-height: 2;
 }
 
-.projects p {
+.projects-type {
   color: var(--secondary-color);
   font-size: 16px;
   line-height: 1.88;
@@ -219,7 +215,7 @@ body {
   color: var(--white);
 }
 
-footer {
+.footer {
   background-color: var(--hero-footer-bcg);
 }
 
@@ -227,11 +223,11 @@ footer {
   font-style: normal;
 }
 
-.site-address a:focus {
+.site-address .link:focus {
   color: var(--accent-color);
 }
 
-.footer-contacts a {
+.footer-contacts .link {
   font-size: 14px;
   line-height: 1.7;
 }

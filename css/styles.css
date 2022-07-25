@@ -15,6 +15,7 @@
   --button-bcg: #f5f4fa;
   --button-hover: #188ce8;
   --header-border: #ececec;
+  --project-border: #eeeeee;
 }
 
 body {
@@ -22,6 +23,12 @@ body {
   color: var(--primary-color);
   font-family: roboto, sans-serif;
   letter-spacing: 0.03em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Утилиты */
@@ -348,7 +355,9 @@ body {
 }
 
 .projects-contant {
+  display: inherit;
   padding: 20px 24px;
+  border: 1px solid var(--project-border);
 }
 
 /* Footer */

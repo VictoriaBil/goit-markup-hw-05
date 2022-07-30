@@ -35,10 +35,18 @@
         </nav>
         <ul class="site-contacts list">
           <li class="contacts-item">
-            <a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="contacts-link link" href="mailto:info@devstudio.com" aria-label="Написать письмо">
+            <svg class="button-icon">
+                <use href="./images/symbol-defs-optimized.svg#icon-envelope" width="16" height="12"  aria-label="Позвонить нам"></use>
+              </svg>
+            info@devstudio.com</a>
           </li>
           <li class="contacts-item">
-            <a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="contacts-link link" href="tel:+380961111111">
+              <svg class="button-icon">
+                <use href="./images/symbol-defs-optimized.svg#icon-smartphone" width="10" height="16"></use>
+              </svg>
+              +38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -46,8 +54,8 @@
 
     <main>
       <!-- Герой-->
-
-      <section class="hero section">
+      
+      <section class="hero section">        
         <div class="container">
           <div class="hero-box">
             <h1 class="hero-title title">Ефективні рішення для вашого бізнесу</h1>
@@ -55,33 +63,53 @@
               <p class="button-title type">Замовити послугу</p>
             </button>
           </div>
-        </div>
+          </div>       
       </section>
-
+      
       <!--Скрытый Наши особенности-->
       <section class="site-features section">
         <div class="container">
           <h2 class="visually-hidden title">Наші особливості</h2>          
             <ul class="features list">
               <li class="features-item">
+                <div class="thumb">
+                  <svg> 
+                    <use href="./images/symbol-defs-optimized.svg#icon-antenna-1" width="70" height="70"></use>
+                  </svg>
+                </div>
                 <h3 class="features-title title">Увага до деталей</h3>
                 <p class="features-desc type">
                   Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
                 </p>
               </li>
               <li class="features-item">
+                <div class="thumb">
+                  <svg> 
+                    <use href="./images/symbol-defs-optimized.svg#icon-clock-1" width="70" height="70"></use>
+                  </svg>
+                </div>
                 <h3 class="features-title title">Пунктуальність</h3>
                 <p class="features-desc type">
                   Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
                 </p>
               </li>
               <li class="features-item">
+                <div class="thumb">
+                  <svg> 
+                    <use href="./images/symbol-defs-optimized.svg#icon-diagram-1" width="70" height="70"></use>
+                  </svg>
+                </div>
                 <h3 class="features-title title">Планування</h3>
                 <p class="features-desc type">
                   Так само консультація з широким активом значною мірою зумовлює.
                 </p>
               </li>
               <li class="features-item">
+                <div class="thumb">
+                  <svg> 
+                    <use href="./images/symbol-defs-optimized.svg#icon-astronaut-1" width="70" height="70"></use>
+                  </svg>
+                </div>
                 <h3 class="features-title title">Сучасні технології</h3>
                 <p class="features-desc type">
                   Значимість цих проблем настільки очевидна, що реалізація планових завдань.
@@ -122,6 +150,36 @@
                 <div class="workers-section">
                   <h3 class="workers-name title">Игорь Демьяненко</h3>
                   <p lang="en" class="workers-speciality type">Product Designer</p>
+                <div class="workers-icon">
+                  <div class="social-icon">
+                  <svg class="svg-icon">                    
+                      <a class="social-link" href="#" aria-label="Instagram">
+                        <use href="./images/symbol-defs-optimized.svg#icon-instagram-2"></use>
+                      </a> 
+                  </svg>
+                </div>
+                <div class="social-icon">
+                  <svg class="svg-icon">
+                        <a class="social-link" href="#" aria-label="Twitter">
+                        <use href="./images/symbol-defs-optimized.svg#icon-twitter-1"></use>
+                      </a>
+                  </svg>
+                </div>
+                <div class="social-icon">
+                  <svg class="svg-icon">
+                      <a class="social-link" href="#" aria-label="Facebook">
+                        <use href="./images/symbol-defs-optimized.svg#icon-facebook-1"></use>
+                      </a>
+                  </svg> 
+                </div>
+                <div class="social-icon">
+                  <svg class="svg-icon">   
+                      <a class="social-link" href="#" aria-label="LinkedIn">
+                        <use href="./images/symbol-defs-optimized.svg#icon-linkedin-1"></use>
+                      </a>              
+                  </svg>
+                </div>
+                </div>
                 </div>
               </li>
               <li class="workers-item">

@@ -16,6 +16,7 @@
   --button-hover: #188ce8;
   --header-border: #ececec;
   --project-border: #eeeeee;
+  --hero-bcg: #c4c4c4;
 }
 
 body {
@@ -128,6 +129,12 @@ button {
   padding-bottom: 32px;
 }
 
+.button-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -187,10 +194,15 @@ button {
 
 /* Hero */
 .hero {
-  background-color: var(--hero-footer-bcg);
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: var(--hero-bcg);
 }
 
 .hero-box {
@@ -206,10 +218,16 @@ button {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   margin-bottom: 30px;
 }
 
 .hero-button {
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   background-color: var(--accent-color);
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -235,6 +253,21 @@ button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+}
+
+/* Overlay */
+
+.overlay {
+  /* max-width: 1600px;
+  min-height: 600px;
+  outline: 1px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #c4c4c4; */
 }
 
 /* Наші особливості */
@@ -277,6 +310,16 @@ button {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+.thumb {
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-color: var(--button-bcg);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
 }
 
 /* Чем мы занимаемся */
@@ -332,6 +375,7 @@ button {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .workers-name {
@@ -342,6 +386,42 @@ button {
 .workers-section {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.workers-icon {
+  display: flex;
+  width: 270px;
+  outline: 1px solid red;
+  padding: 0 32px;
+  margin-bottom: 30px;
+  margin-right: -10px;
+}
+
+.social-icon {
+  display: block;
+  outline: 1px solid teal;
+  margin-right: 10px;
+  background-color: var(--white);
+}
+
+.svg-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 0 12px;
+}
+
+.svg-icon use {
+  fill: #afb1b8;
+}
+
+.social-icon:hover {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.svg-icon use:hover {
+  fill: var(--white);
 }
 /* Портфоліо. Наші роботи*/
 

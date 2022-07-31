@@ -18,6 +18,7 @@
   --project-border: #eeeeee;
   --hero-bcg: #c4c4c4;
   --icon-color: #afb1b8;
+  --icon-header: #757575;
 }
 
 body {
@@ -131,10 +132,8 @@ button {
 }
 
 .button-icon {
-  height: 16px;
-  width: 16px;
   margin-right: 10px;
-  fill: #757575;
+  fill: var(--icon-header);
 }
 
 .button-icon:hover {

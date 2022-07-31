@@ -17,6 +17,7 @@
   --header-border: #ececec;
   --project-border: #eeeeee;
   --hero-bcg: #c4c4c4;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -362,7 +363,8 @@ button {
 }
 
 .services-title,
-.workers-title {
+.workers-title,
+.clients-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -391,7 +393,6 @@ button {
 .workers-icon {
   display: flex;
   width: 270px;
-  outline: 1px solid red;
   padding: 0 32px;
   margin-bottom: 30px;
   margin-right: -10px;
@@ -399,9 +400,8 @@ button {
 
 .social-icon {
   display: block;
-  outline: 1px solid teal;
   margin-right: 10px;
-  background-color: var(--white);
+  background-color: transparent;
 }
 
 .svg-icon {
@@ -411,8 +411,8 @@ button {
   padding: 0 12px;
 }
 
-.svg-icon use {
-  fill: #afb1b8;
+.svg-icon {
+  fill: var(--icon-color);
 }
 
 .social-icon:hover {
@@ -420,7 +420,7 @@ button {
   border-radius: 50%;
 }
 
-.svg-icon use:hover {
+.svg-icon:hover {
   fill: var(--white);
 }
 /* Портфоліо. Наші роботи*/
@@ -472,9 +472,43 @@ button {
 }
 
 .projects-contant {
-  /* display: inherit; */
   padding: 20px 24px;
   border: 1px solid var(--project-border);
+}
+
+/* Постійні клієнти */
+.clients {
+  display: flex;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.clients-icon {
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.clients-item {
+  width: 170px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.svg-clients {
+  display: block;
+  padding: 16px 32px;
+  fill: var(--icon-color);
+}
+
+.clients-icon:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.svg-clients:hover {
+  fill: var(--accent-color);
 }
 
 /* Footer */
@@ -519,4 +553,45 @@ button {
 .mail,
 .tel {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.networks {
+  display: flex;
+}
+
+.footer-address {
+  display: block;
+  width: 231px;
+  margin-right: 70px;
+}
+
+.networks-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.site-networks {
+  display: block;
+  height: 80px;
+  width: 206px;
+  margin-top: 12px;
+}
+
+.networks-icon {
+  display: flex;
+}
+
+.social-icon.net {
+  display: block;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.social-icon.net:hover {
+  background-color: var(--accent-color);
 }

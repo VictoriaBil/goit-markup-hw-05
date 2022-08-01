@@ -408,6 +408,7 @@ button {
   display: block;
   margin-right: 10px;
   color: var(--icon-color);
+  fill: currentColor;
 }
 
 .svg-icon {
@@ -415,7 +416,6 @@ button {
   width: 44px;
   height: 44px;
   padding: 0 12px;
-  fill: currentColor;
 }
 
 .social-icon:hover,

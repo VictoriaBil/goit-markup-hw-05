@@ -127,13 +127,14 @@ button {
 
 .contacts-link {
   display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
 .button-icon {
   margin-right: 10px;
-  fill: var(--icon-header);
+  fill: currentColor;
 }
 
 .button-icon:hover {
@@ -318,11 +319,12 @@ button {
 }
 
 .thumb {
-  display: block;
+  display: flex;
   width: 270px;
   height: 120px;
   background-color: var(--button-bcg);
-  padding: 25px 100px;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
   border-radius: 4px;
 }
@@ -405,7 +407,7 @@ button {
 .social-icon {
   display: block;
   margin-right: 10px;
-  background-color: transparent;
+  color: var(--icon-color);
 }
 
 .svg-icon {
@@ -413,20 +415,16 @@ button {
   width: 44px;
   height: 44px;
   padding: 0 12px;
+  fill: currentColor;
 }
 
-.svg-icon {
-  fill: var(--icon-color);
-}
-
-.social-icon:hover {
+.social-icon:hover,
+.social-icon:focus {
   background-color: var(--accent-color);
+  color: var(--white);
   border-radius: 50%;
 }
 
-.svg-icon:hover {
-  fill: var(--white);
-}
 /* Портфоліо. Наші роботи*/
 
 .options-button {
@@ -489,12 +487,14 @@ button {
 
 .clients-icon {
   display: flex;
+  color: var(--icon-color);
   width: 170px;
   height: 92px;
   justify-content: center;
   align-items: center;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  fill: currentColor;
 }
 
 .clients-item {
@@ -503,16 +503,10 @@ button {
   margin-bottom: 30px;
 }
 
-.svg-clients {
-  fill: var(--icon-color);
-}
-
-.clients-icon:hover {
+.clients-icon:hover,
+.clients-icon:focus {
+  color: var(--accent-color);
   border: 1px solid var(--accent-color);
-}
-
-.svg-clients:hover {
-  fill: var(--accent-color);
 }
 
 /* Footer */
@@ -592,10 +586,21 @@ button {
 .social-icon.net {
   display: block;
   margin-right: 10px;
+  color: var(--white);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  fill: currentColor;
 }
 
-.social-icon.net:hover {
+.footer-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 0 12px;
+}
+
+.social-icon.net:hover,
+.social-icon.net:focus {
+  color: var(--white);
   background-color: var(--accent-color);
 }

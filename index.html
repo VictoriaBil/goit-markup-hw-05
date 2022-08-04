@@ -25,7 +25,8 @@
           >
           <ul class="site-nav list">
             <li class="nav-item">
-              <a class="nav-link current link" href="./index.html">Студія</a>
+              <a class="nav-link current link" href="./index.html">Студія   
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link link" href="./portfolio.html">Портфоліо</a>
@@ -61,9 +62,20 @@
             <h1 class="hero-title title">Ефективні рішення для вашого бізнесу</h1>
             <button class="hero-button" type="button">
               <p class="button-title type">Замовити послугу</p>
+              <div class="backdrop">
+                <div class="modal"> 
+
+                  <button class="button-modal">
+                    <svg width="30" height="30">
+                      <use href="./images/close.svg"></use>
+                    </svg>
+                  </button>                                           
+                  
+                </div>
+              </div>
             </button>
           </div>
-          </div>       
+        </div>       
       </section>
       
       <!--Скрытый Наши особенности-->
@@ -126,13 +138,28 @@
           <h2 class="services-title title">Чим ми займаємось</h2>
              <ul class="services list">
               <li class="services-item">
-                <img src="./images/photo_typing.jpg" alt="Печатает на клавиаутре" width="370" />
+                <div class="services-thumb">
+                 <img src="./images/photo_typing.jpg" alt="Печатает на клавиаутре" width="370" />
+                  <div class="services-text">
+                   <p class="desc-title title">Десктопні додатки</p>
+                  </div>
+                </div>
               </li>
               <li class="services-item">
+               <div class="services-thumb">
                 <img src="./images/photo_desktop.jpg" alt="Выбирает оформление" width="370" />
+                 <div class="services-text">
+                   <p class="desc-title title">Мобільні додатки</p>
+                 </div>
+               </div>
               </li>
               <li class="services-item">
-                <img src="./images/photo_design.jpg" alt="Делает дизайн" width="370" />
+               <div class="services-thumb">
+                 <img src="./images/photo_design.jpg" alt="Делает дизайн" width="370" />
+                  <div class="services-text">
+                   <p class="desc-title title">Дизайнерські рішення</p>
+                  </div>
+               </div>
               </li>
             </ul>          
         </div>
